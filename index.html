@@ -1,0 +1,26 @@
+<html>
+    <body>
+        <link rel = "stylesheet" href = "style.css"/>
+        <div id="main">
+
+           
+        
+            <nav v-bind:class="active" >
+        
+              
+        
+                <a href="#" class="home" >Home</a>
+                <a href="#" class="proyectos" >Proyectos</a>
+                <a href="#" class="servicios" >Servicios</a>
+                <a href="#" class="contacto" >Contacto</a>
+            </nav>
+        
+            <!-- The mustache expression will be replaced with the value of "active".
+                 It will automatically update to reflect any changes. -->
+        
+            <p>Elegiste <b>{{active}}</b></p>
+        </div>
+        <script src = "https://unpkg.com/vue"></script>
+        <script src = "main.js"></script>
+    </body>
+</html>
